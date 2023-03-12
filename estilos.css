@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color:white;
+    background-color: #010405;
+    padding: 1em;
+}
+
+.info p{
+    font-size: 0.8em;
+    font-weight: lighter;
+}
+.container-name{
+    background-color: #125F73;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 50%);
+    position: relative;
+    z-index: 1;
+}
+.foto{
+height: 500px;
+background: url('foto.png') no-repeat center center;
+background-size: cover;
+}
+
+.titulo{
+    background-color:#F16935;
+    padding: 0.25em;
+    font-size:1.5em;
+    border-bottom: 2px solid #793418;
+}
+
+
+.list-pages li{
+    margin-bottom: 1em;
+}
+
+.list-pages li a:hover{
+    color:#010405 !important
+}
+
+.nombre{
+    font-size: 3em;
+}
+span{
+    font-size: 1.5em;
+}
+
+
+@media (min-width:550px){
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 95vh;
+}
+.perfil{
+    width: 60%;
+    background-position: center top;
+}
+.foto{
+    height: 100%;
+}
+.titulo{
+    font-size: 1em;
+}
+.container-name{
+    box-shadow: -2px 0 4px rgb(0 0 0 / 50%);
+    z-index: 1;
+    width: 40%;
+}
+.nombre{font-size: 1em;}
+span{
+font-size:2em;
+}
+}
+@media (min-width:720px){
+    .info p{
+        font-size: 1em;
+    }
+    
+}
+@media (min-width:991px){
+    .nombre{
+        font-size: 2em;
+    }
+    .titulo{
+        font-size:1.5em;
+    }
+}
